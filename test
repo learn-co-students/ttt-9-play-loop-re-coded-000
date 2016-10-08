@@ -39,3 +39,19 @@ def play(board)
     turn(board)
   end
 end
+
+
+####
+
+#bin
+#!/usr/bin/env ruby
+
+require_relative "../lib/play"
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+display_board(board)
+
+# Make sure to execute #play below
+play(board)
