@@ -32,22 +32,6 @@ def turn(board)
 end
 
 # Define your play method below
-
-def play(board)
-  ef turn(board)
-  puts "Please enter 1-9:"
-  position = gets.strip
-  if (valid_move?(board,position))
-  move(board,position)
-  else
-  turn(board)
-   end
-  display_board(board)
-  end
-  #--------------------------------------------------
-  def position_taken?(board, location)
-  board[location] != " "
-   end
    def play(board)
      9.times do
    turn(board)
